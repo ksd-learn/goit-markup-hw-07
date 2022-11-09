@@ -1,0 +1,13 @@
+.logo {
+    display: inline-block;
+    color: $a-hover-focus--btn;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+
+    span {
+        color: $black;
+    }
+}

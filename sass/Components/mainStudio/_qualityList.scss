@@ -1,0 +1,30 @@
+.prioritie-list {
+    display: flex;
+
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        width: 270px;
+
+        +.item {
+            margin-left: 30px;
+        }
+    }
+}
+
+.prioritie-list__icon {
+    width: 270px;
+    height: 120px;
+    text-align: center;
+    background-color: $backgr-team;
+    padding-top: 25px;
+    margin-bottom: 30px;
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+}

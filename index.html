@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/studio.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">    
     <script> </script>
 </head>
+
 <body>
     <header>
         <div class="header container">
@@ -51,7 +51,7 @@
         <section class="basic">
             <div class="container">
                 <h1 class="basic__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="basic__btn" type="button" data-modal-open>Замовити послугу</button>
+                <button class="btn basic__btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -331,7 +331,7 @@
                 <address>
                     <ul class="footer-list">
                         <li class="item">
-                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list_map link" target="_blank"
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list__map link" target="_blank"
                                 rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="item"><a href="mailto:info@devstudio.com" class="footer-list_color link">info@devstudio.com</a></li>
@@ -343,28 +343,28 @@
                 <p class="footer-join__title">приєднуйтесь</p>
                 <ul class="networks">
                     <li class="item">
-                        <a href="#" class="link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#linkedin"></use>
                             </svg>
@@ -377,7 +377,7 @@
                 <form class="footer__mail js-speaker-join" >
                     <label class="visually-hidden" for="email">Пошта</label>
                     <input class="footer__mail_style" type="email" name="email" id="email" placeholder="E-mail">
-                    <button class="footer-mail__btn" type="submit" >
+                    <button class="btn footer-mail__btn" type="submit" >
                         Підписатися
                         <svg class="icon icon-send">
                             <use href="./images/sprite-icon.svg#send"></use>
@@ -393,7 +393,7 @@
         <div class="modal">
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
             <button class="modal__close" type="button" tabindex="1" data-modal-close>
-                <svg class="icon">
+                <svg class="icon modal__close_color">
                     <use href="./images/sprite-icon.svg#close"></use>
                 </svg>
             </button>
@@ -424,16 +424,16 @@
                     <textarea class="modal__commit" name="commit" id="commit" placeholder="Введіть текст"></textarea>
                 </div>
                  <div class="modal-checkbox">
-                    <label class="modal-checkbox_value" for="kontrakt">
-                        <input class="modal-checkbox_hide visually-hidden" type="checkbox" name="kontrakt" id="kontrakt">
-                        <svg class="icon modal-checkbox_view">
+                    <label class="modal-checkbox__value" for="kontrakt">
+                        <input class="modal-checkbox__hide visually-hidden" type="checkbox" name="kontrakt" id="kontrakt">
+                        <svg class="icon modal-checkbox__view">
                             <use href="./images/sprite-icon.svg#check"></use>
                         </svg>
                         <p >Погоджуюся з розсилкою та приймаю</p>
                         <a href="#" class="modal-checkbox__link">Умови договору</a>
                     </label>
                  </div>
-                <button class="modal-btn" type="submit" data-modal-submit>Відправити</button>
+                <button class="btn modal__btn" type="submit" data-modal-submit>Відправити</button>
             </form>
         </div>
     </div>

@@ -1,0 +1,42 @@
+/* глобальный border-box */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* сброс дефолтных отступов и padding */
+h1,
+h2,
+h3,
+ul,
+p {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* заголовки */
+h2 {
+    color: $title;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h3 {
+    color: $title;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+/* img - уберем нижний просвет */
+img {
+    display: block;
+}

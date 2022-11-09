@@ -1,0 +1,20 @@
+.btn {
+    
+        color: $text-backgr-white;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        background-color: $a-hover-focus--btn;
+        border: 0 solid transparent;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $btn-hover-focus;
+    }
+}

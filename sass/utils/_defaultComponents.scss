@@ -1,0 +1,56 @@
+/* класс для сокрытия элемента (блока) */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* дефолтные свойства svg-иконок */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* текст в body */
+body {
+    color: $text;
+    background-color: $text-backgr-white;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+
+/* стилизация списков<li> */
+.item {
+    list-style: none;
+}
+
+/* стилизация ссылок<a> */
+.link {
+    text-decoration: none;
+}
+
+/* блочная разметка CONTAINER и SECTION */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

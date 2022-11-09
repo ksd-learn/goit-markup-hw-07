@@ -1,0 +1,35 @@
+.header-connect {
+    display: flex;
+
+    .item {
+        +.item {
+            margin-left: 30px;
+        }
+    } 
+}
+
+.header-connect_color {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $a-hover-focus--btn;
+    }
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+}

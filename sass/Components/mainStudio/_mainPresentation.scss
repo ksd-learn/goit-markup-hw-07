@@ -1,0 +1,38 @@
+.basic {
+    max-width: 1600px;
+    height: 600px;
+    background-color: rgb(47, 48, 58);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("/images/studio/basic.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.basic__title {
+    width: 696px;
+    color: $text-backgr-white;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+@import '../buttonBig';
+
+.basic__btn {
+    width: 216px;
+    height: 50px;
+}

@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
     <script> </script>
 </head>
 
@@ -221,7 +220,7 @@
                 <address>
                     <ul class="footer-list">
                         <li class="item">
-                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list_map link" target="_blank"
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list__map link" target="_blank"
                                 rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="item"><a href="mailto:info@devstudio.com"
@@ -235,28 +234,28 @@
                 <p class="footer-join__title">приєднуйтесь</p>
                 <ul class="networks">
                     <li class="item">
-                        <a href="#" class="link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link link networks__icon footer-join_hover">
+                        <a href="#" class="link networks__icon footer-join_color">
                             <svg class="icon">
                                 <use href="./images/sprite-icon.svg#linkedin"></use>
                             </svg>
@@ -267,8 +266,9 @@
             <div>
                 <p class="footer-join__title">Підпишіться на розсилку</p>
                 <form class="footer__mail js-speaker-join">
+                    <label class="visually-hidden" for="email">Пошта</label>
                     <input class="footer__mail_style" type="email" name="email" id="email" placeholder="E-mail">
-                    <button class="footer-mail__btn" type="submit">
+                    <button class="btn footer-mail__btn" type="submit">
                         Підписатися
                         <svg class="icon icon-send">
                             <use href="./images/sprite-icon.svg#send"></use>
@@ -278,8 +278,6 @@
             </div>
         </div>
     </footer>
-
-    
 
 </body>
 

@@ -4,7 +4,7 @@
     .addEventListener('submit', e => {
         e.preventDefault();
         new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`${name}: ${value}`)
+            console.log(`Форма ${name}: ${value}`)
         );
     });
     document
@@ -12,7 +12,7 @@
     .addEventListener('submit', e => {
         e.preventDefault();
         new FormData(e.currentTarget).forEach((value, name) =>
-            console.log(`Разсылка ${name}: ${value}`)
+            console.log(`Рассылка ${name}: ${value}`)
         );
     });
 })();
