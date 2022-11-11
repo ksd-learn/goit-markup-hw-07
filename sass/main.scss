@@ -1,158 +1,18 @@
 @import 'utils/variable';
 @import 'utils/default';
-@import 'utils/defaultComponents';
+@import 'utils/default-components';
 
 
 /* header */
-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-
-    .logo {
-        margin-right: 93px;
-    }
-}
-
-@import 'components/headerFooter/logo';
-@import 'components/headerFooter/headerNavigation';
-
-.header-nav{
-    margin-right: 318px;
-}
-
-@import 'components/headerFooter/headerConnect';
+@import 'components/header';
 
 
 /* Стили для <main> STUDIO */
-/* basic */
-@import 'components/mainStudio/mainPresentation';
-
-/* prioritie */
-@import 'components/mainStudio/qualityList';
-
-/* service */
-@import 'components/mainStudio/skills';
-
-/* team */
-@import 'components/mainStudio/team';
-
-/* clients */
-@import 'components/mainStudio/clients';
-
-/* модальное окно */
-@import 'components/mainStudio/modalWind';
-
+@import 'components/main-studio';
 
 /* Стили для <main> PORTFOLIO */
-/* filter */
-@import 'components/mainPortfolio/filter';
-
-/* сетка */
-@import 'components/mainPortfolio/portfolioList';
+@import 'components/main-portfolio';
 
 
 /* footer */
-.footer {
-    background-color: $backgr-black;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    .container {
-        display: flex;
-        align-items: baseline;
-    }
-
-    .logo {
-        margin-bottom: 20px;
-    }
-}
-
-.footer-connect {
-    margin-right: 89px;
-
-    span {
-        color: $text-backgr-white;
-    }
-}
-
-@import 'components/headerFooter/footerListKontakts';
-
-.footer-join {
-    margin-right: 89px;
-}
-
-.footer-join__title {
-    color: $text-backgr-white;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-@import 'components/networks';
-
-.footer-join_color {
-    color: $text-backgr-white;
-    background-color: $icon-backgr;
-}
-
-.footer__mail {
-    display: flex;
-    align-items: center;
-}
-
-.footer__mail_style {
-    width: 358px;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-    caret-color: $text-gray;
-    padding: 14px 16px;
-    background-color: $backgr-black;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    margin-right: 12px;
-
-    &:hover,
-    &:focus {
-        outline: 0;
-        outline-offset: 0;
-        border: 1px solid $text-gray;
-    }
-
-    &:-webkit-autofill,
-    &:-webkit-autofill:focus {
-        outline: 0;
-        outline-offset: 0;
-        caret-color: $text-gray;
-        border: 1px solid rgb(172, 172, 172);
-        -webkit-text-fill-color: rgb(172, 172, 172);
-        -webkit-box-shadow:0 0 0px 1000px $backgr-black inset;
-    }
-}
-
-.footer-mail__btn {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon-send {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-}
-
+@import 'components/footer';

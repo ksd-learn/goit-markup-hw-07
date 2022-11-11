@@ -1,13 +1,11 @@
-$backgr: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../../../images/studio/basic.jpg");
-
 .basic {
     max-width: 1600px;
     height: 600px;
     background-color: rgb(47, 48, 58);
-    background-image: $backgr;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/studio/basic.jpg");;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -32,7 +30,7 @@ $backgr: linear-gradient(to right,
     margin-bottom: 30px;
 }
 
-@import '../buttonBig';
+@import '../common-components/button-big';
 
 .basic__btn {
     width: 216px;

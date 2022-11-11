@@ -118,6 +118,9 @@ header {
 .header .logo {
   margin-right: 93px;
 }
+.header .header-nav {
+  margin-right: 318px;
+}
 
 .logo {
   display: inline-block;
@@ -162,10 +165,6 @@ header {
   bottom: -34px;
 }
 
-.header-nav {
-  margin-right: 318px;
-}
-
 .header-connect {
   display: flex;
 }
@@ -202,7 +201,7 @@ header {
   max-width: 1600px;
   height: 600px;
   background-color: rgb(47, 48, 58);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/studio/basic.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/basic.jpg");
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -247,7 +246,9 @@ header {
 .basic__btn {
   width: 216px;
   height: 50px;
-} /* prioritie */
+}
+
+/* prioritie */
 .prioritie-list {
   display: flex;
 }
@@ -345,6 +346,31 @@ header {
   padding-left: 32px;
   padding-right: 32px;
   margin-top: 16px;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.networks__icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50% 50%;
+  border: 0 solid transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks__icon .icon {
+  width: 20px;
+  height: 20px;
+}
+.networks__icon:hover, .networks__icon:focus {
+  background-color: #2196F3;
 }
 
 .team-list_hover {
@@ -762,31 +788,6 @@ header {
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.networks {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.networks__icon {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  border-radius: 50% 50%;
-  border: 0 solid transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.networks__icon .icon {
-  width: 20px;
-  height: 20px;
-}
-.networks__icon:hover, .networks__icon:focus {
-  background-color: #2196F3;
 }
 
 .footer-join_color {

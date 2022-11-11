@@ -30,7 +30,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@import '../close';
+@import '../common-components/close';
 
 .modal__title {
     font-size: 20px;
